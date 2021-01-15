@@ -18,8 +18,7 @@ $(document).ready(function(){
 
     if(isNaN(answer1) || isNaN(answer2) || isNaN(answer3) ||isNaN(answer4) || isNaN(answer5)){
       $('div#fail').text("Please don't leave any selections blank");
-      ifTestVar = "";
-    } else if(ifTestVar === undefined){
+    } else {
       if((answer5 === 4 || (answer1 === 4 && answer2 === 4) || (answer2 === 4 && answer3 === 4 && answer4 === 4))){
         $('span#output').text('It sounds like your interests may be geared away from working with computers! That\'s ok! Take some more time to explore coding!');
         $('div#hide').hide();
@@ -43,7 +42,7 @@ $(document).ready(function(){
         $('div#hidden').show();
         outputTest = ('span#output').val();
       } else {
-        if(outputTest === undefined && ){
+        if(outputTest === undefined){
           $('span#output').text('You may be too complicated and outdoorsy for me to figure out! JavaScript, C# and Python may all be great places to start!');
           $('div#hide').hide();
           $('div#hidden').show();
@@ -51,4 +50,9 @@ $(document).ready(function(){
       }
     }
   });
+  $('span#refresh').click(function(){
+    $('div#hide').show();
+    $('div#hidden').hide();
+    location.reload();
+  })
 });
