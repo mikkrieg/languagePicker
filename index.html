@@ -14,7 +14,7 @@
       <form>
         <h1 class="jumbotron text-center">What language is best for you?</h1>
         <!-- Languages: JavaScript, C# & Python-->
-        <div class="card">
+        <div class="card" id="hide">
           <div class="card-body">
             <div class="row row-styling">
               <div class="col-lg-4 col-md-10">
@@ -92,20 +92,27 @@
               <button type="submit" class="btn btn-dark">Submit!</button>
             </div>
           </div>
-        </div>
-      </form>
-        <div class="card" id="hidden">
-          <div class="card-body">
-            <div class="card-title">
-              <h2>Results!</h2>
-              <div class="card-text">
-                <div>
-                  <p>Here's your match: <span id="output"></span></p>
-                </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div id="fail" class=" bg-danger bold">
+                
               </div>
             </div>
           </div>
         </div>
+      </form>
+      <div class="card" id="hidden">
+        <div class="card-body">
+          <div class="card-title">
+            <h2>Results!</h2>
+            <div class="card-text">
+              <div>
+                <p>Here's your match: <span id="output"></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

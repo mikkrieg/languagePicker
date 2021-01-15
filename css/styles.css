@@ -21,6 +21,10 @@ button {
   background-color: #d5d9e0;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 #hidden {
   display: none;
 }
