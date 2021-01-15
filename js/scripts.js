@@ -17,13 +17,23 @@ $(document).ready(function(){
       $('div#fail').text("Please don't leave any selections blank");
     } else {
       if((answer5 === 4 || (answer1 === 4 && answer2 === 4) || (answer2 === 4 && answer3 === 4 && answer4 === 4))){
-        $('span#output').text(
-          'It sounds like your interests may be geared away from working with computers! That\'s ok! Take some more time to explore coding!'
-          )
+        $('span#output').text('It sounds like your interests may be geared away from working with computers! That\'s ok! Take some more time to explore coding!');
         $('div#hide').hide();
         $('div#hidden').show();
-      } else {
-       
+        // JavaScript Branch
+      } else if(answer1 === 1 && answer2 === 1 && (answer3 === 2 || 3) && (answer4 === 1 || 3) && answer5 === 1) {
+        $('span#output').text('JavaScript sounds like a great language for a free spirited and comfy person like you!');
+        $('div#hide').hide();
+        $('div#hidden').show();
+        // C# Branch
+      } else if((answer1 === 1 || 2) && answer2 === 2 && (answer3 === 1 || 2 || 3) && (answer4 === 1 || 2 || 3) && answer5 === 2) {
+        $('span#output').text('C# sounds like a great language for a focused/disciplined and stylish person such as yourself!');
+        $('div#hide').hide();
+        $('div#hidden').show();
+      } else if((answer1 === 1 || 2) && answer2 === 3 && (answer3 === 2 || 3) && (answer4 === 1 || 3) && answer5 === 3){
+        $('span#output').text('Python is a great language for a comfy and logical person, sounds a lot like you!');
+        $('div#hide').hide();
+        $('div#hidden').show();
       }
     }
 
