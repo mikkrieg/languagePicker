@@ -20,3 +20,7 @@ button {
   margin-top: 25px;
   background-color: #d5d9e0;
 }
+
+#hidden {
+  display: none;
+}
