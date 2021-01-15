@@ -3,19 +3,15 @@ $(document).ready(function(){
     e.preventDefault();
 
     const answer1 = parseInt($('select#question1').val(), 10); 
-    // 1:Computer, 2:games, 3:phones, 4:outside
-    const answer2 = parseInt($('select#question2').val(), 10)
-    // 1:freedom, 2:rigid, 3:logic, 4:dirt
-    const answer3 = parseInt($('select#question3').val(), 10)
-    // 1:Suit, 2:hoodie, 3:pajamas, 4:boots
-    const answer4 = parseInt($('select#question4').val(), 10)
-    // 1:tech, 2:writing, 3:puzzles, 4:nature
-    const answer5 = parseInt($('select#question5').val(), 10)
-    // 1:software, 2:game, 3:app, 4:no like
-    
+    const answer2 = parseInt($('select#question2').val(), 10);
+    const answer3 = parseInt($('select#question3').val(), 10);
+    const answer4 = parseInt($('select#question4').val(), 10);
+    const answer5 = parseInt($('select#question5').val(), 10);
+  
     let outputTest;
+
     // Check if any selection has not been chosen
-    if(isNaN(answer1) || isNaN(answer2) || isNaN(answer3) ||isNaN(answer4) || isNaN(answer5)){
+    if(isNaN(answer1) || isNaN(answer2) || isNaN(answer3) || isNaN(answer4) || isNaN(answer5)){
       $('div#fail').text("Please don't leave any selections blank");
     } else {
       // Outdoorsy branch - (People who might not like sitting indoors at a computer for hours)
@@ -45,7 +41,7 @@ $(document).ready(function(){
         // Unknown combo branch
       } else {
         if(outputTest === undefined){
-          $('span#output').text('You may be too complicated and outdoorsy for me to figure out! JavaScript, C# and Python may all be great places to start!');
+          $('span#output').text('You may be too complicated and outdoorsy for me to figure out! JavaScript, C# and Python are all great places to start!');
           $('div#hide').hide();
           $('div#hidden').show();
           }

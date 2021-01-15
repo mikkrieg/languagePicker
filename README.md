@@ -1,6 +1,6 @@
 # _Language picker_
 
-#### _A site that picks a language_
+#### _A site that picks a language based on selections_
 
 #### By _**Michael Kriegel**_
 
