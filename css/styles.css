@@ -1,3 +1,22 @@
+h1 {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+body {
+  background-color: #d8dfeb;
+}
+
+button {
+  margin-bottom: 15px;
+}
+
 .row-styling {
   margin-top: 40px;
+  margin-left: 20%;
+}
+
+.card {
+  margin-top: 25px;
+  background-color: #d5d9e0;
 }
