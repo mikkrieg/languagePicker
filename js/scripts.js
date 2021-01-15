@@ -15,15 +15,19 @@ $(document).ready(function(){
     
     if(isNaN(answer1) || isNaN(answer2) || isNaN(answer3) ||isNaN(answer4) || isNaN(answer5)){
       $('div#fail').text("Please don't leave any selections blank");
+    } else {
+      if((answer5 === 4 || (answer1 === 4 && answer2 === 4) || (answer2 === 4 && answer3 === 4 && answer4 === 4))){
+        $('span#output').text(
+          'It sounds like your interests may be geared away from working with computers! That\'s ok! Take some more time to explore coding!'
+          )
+        $('div#hide').hide();
+        $('div#hidden').show();
+      } else {
+       
+      }
     }
 
-    if(answer1 != 4){
-      console.log(answer1)
-    } else {
-      $('span#output').text('It sounds like you may be interested in other things!')
-      $('div#hide').hide();
-      $('div#hidden').show();
-    }
+    
     
   });
 });
