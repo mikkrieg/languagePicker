@@ -17,42 +17,43 @@ $(document).ready(function(){
     } else {
       // Outdoorsy branch - (People who might not like sitting indoors at a computer for hours)
       if((answer5 === 4 || (answer1 === 4 && answer2 === 4) || (answer2 === 4 && answer3 === 4 && answer4 === 4))){
-        $('span#output').text(name + '! It sounds like your interests may be geared away from working with computers! That\'s ok! Take some more time to explore coding!');
+        $('span#output').text(name + '! It sounds like your interests may be geared away from working with computers! That\'s ok! Take some more time to explore!');
         $('div#hide').hide();
         $('div#hidden').show();
-        outputTest = ('span#output').val();
+        outputTest = $('span#output').val();
         // JavaScript Branch
       } else if((answer1 === 1 || 4) && answer2 === 1 && (answer3 === 2 || 3 || 4) && (answer4 === 1 || 3) && answer5 === 1) {
         $('span#output').text(name + '! JavaScript sounds like a great language for a free spirited and comfy person like you!');
         $('div#hide').hide();
         $('div#hidden').show();
-        outputTest = ('span#output').val();
+        outputTest = $('span#output').val();
         // C# Branch
       } else if((answer1 === 1 || 2) && answer2 === 2 && (answer3 === 1 || 2 || 3 || 4) && (answer4 === 1 || 2 || 3) && answer5 === 2) {
         $('span#output').text(name + '! C# sounds like a great language for a focused/disciplined and stylish person such as yourself!');
         $('div#hide').hide();
         $('div#hidden').show();
-        outputTest = ('span#output').val();
+        outputTest = $('span#output').val();
         // Python Branch
       } else if((answer1 === 1 || 3) && answer2 === 3 && (answer3 === 2 || 3 || 4) && (answer4 === 1 || 3) && answer5 === 3){
         $('span#output').text(name + '! Python is a great language for a comfy and logical person, sounds a lot like you!');
         $('div#hide').hide();
         $('div#hidden').show();
-        outputTest = ('span#output').val();
+        outputTest = $('span#output').val();
         // Unknown combo branch
       } else {
         if(outputTest === undefined){
           $('span#output').text(name + '! You may be too complicated and outdoorsy for me to figure out! JavaScript, C# and Python are all great places to start!');
           $('div#hide').hide();
           $('div#hidden').show();
-          }
+        }
       }
     }
   });
+
   // Return to form and refresh
   $('span#refresh').click(function(){
     $('div#hide').show();
     $('div#hidden').hide();
     location.reload();
-  })
+  });
 });
