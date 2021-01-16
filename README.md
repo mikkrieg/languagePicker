@@ -25,6 +25,9 @@ _This is a webpage created for my Week 2 independant project at Epicodus. This p
 * _Navigate to the top level directory_
 * _Open index.html in your browser_
 
+### Web Version 
+* [Github Pages](https://mikkrieg.github.io/languagePicker/index.html)
+
 ## Known Bugs
 
 * _No known bugs_
