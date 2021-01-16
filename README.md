@@ -30,7 +30,7 @@ _This is a webpage created for my Week 2 independant project at Epicodus. This p
 
 ## Known Bugs
 
-* _No known bugs_
+* _Images are not responsivley formatted for smaller screens_
 
 ## License
 
