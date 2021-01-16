@@ -13,7 +13,7 @@ $(document).ready(function(){
 
     // Check if any selection has not been chosen
     if(isNaN(answer1) || isNaN(answer2) || isNaN(answer3) || isNaN(answer4) || isNaN(answer5)){
-      $('div#fail').text("Please don't leave any selections blank");
+      $('div#failOutput').text("Please don't leave any selections blank");
     } else {
       // Outdoorsy branch - (People who might not like sitting indoors at a computer for hours)
       if((answer5 === 4 || (answer1 === 4 && answer2 === 4) || (answer2 === 4 && answer3 === 4 && answer4 === 4))){
